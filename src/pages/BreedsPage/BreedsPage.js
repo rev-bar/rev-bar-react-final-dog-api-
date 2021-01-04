@@ -12,10 +12,11 @@ function BreedsPage() {
     const [reRender,setReRender] = useState(5);
 
 
-        useEffect ( ()=> {
-            axios.get("https://dog.ceo/api/breeds/list/all").then(res => 
-            setBreeds(Object.keys(res.data.message) ))
-      },[])
+   useEffect ( ()=> {
+        axios.get("https://dog.ceo/api/breed/" +breed+"/images").then( res=>{
+        setImageByBreed(res.data.message)
+    })
+    },[reRender])
 
     function reRenderPics(){
         let newNum = reRender+2;
