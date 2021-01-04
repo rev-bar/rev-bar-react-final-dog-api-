@@ -6,12 +6,20 @@ import { Card } from 'react-bootstrap';
 import './DogCard.css';
 
 function DogCard(props) {
- // const dogBreed = "affenpinscher";
-    const imageByBreed ="https:\/\/images.dog.ceo\/breeds\/affenpinscher\/n02110627_12431.jpg"; 
+ 
+    // const imageByBreed ="https:\/\/images.dog.ceo\/breeds\/affenpinscher\/n02110627_12431.jpg"; 
 
     const {breed} = props;
   
+    const [imageByBreed,setImageByBreed] = useState("");
 
+
+    useEffect ( ()=> {
+        axios.get("https://dog.ceo/api/breed/" +breed+"/images/random").then( res=>{
+        console.log (res.data.message);
+        setImageByBreed(res.data.message)
+    })
+    },[])
 
     return (
         <div> 
