@@ -7,8 +7,7 @@ import './DogCard.css';
 
 function DogCard(props) {
  
-    const {breed, reRender,key} = props;
-    console.log (key); 
+    const {breed, reRender} = props;
     const [imageByBreed,setImageByBreed] = useState("");
     
 

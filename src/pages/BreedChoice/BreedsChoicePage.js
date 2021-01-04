@@ -11,7 +11,7 @@ function BreedsChoice() {
     const [breedPics,setBreedPics] = useState([]);
 
     const {index} = useParams();
-    // console.log(breedIndex);
+
  
    
     const breed ="hound";
