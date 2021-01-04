@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import './HomePage.css';
 
@@ -8,8 +9,8 @@ function HomePage(props) {
             <p className= "p-home-head">DogBook</p>  
             <h1>Mens best friend</h1>
                 <div>
-                    {/* <Link to= "/breeds"  className= "p-home-links">Breeds page</Link>   */}
-                    <p>ff</p>
+                    <Link to= "/breeds"  className= "p-home-links">Breeds page</Link>  
+                
                 </div>
             
                  

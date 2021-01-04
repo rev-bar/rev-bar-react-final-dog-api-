@@ -2,6 +2,7 @@
 
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
+import BreedsPage from './pages/BreedsPage/BreedsPage';
 import HomePage from './pages/Homepage/HomePage';
 
 
@@ -17,6 +18,8 @@ function App() {
         <HashRouter>
           <Switch>
             <Route exact path= "/"><HomePage/></Route>
+            <Route exact path= "/breeds"><BreedsPage/></Route>
+
           </Switch>  
         </HashRouter> 
  
