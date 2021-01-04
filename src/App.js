@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, Row } from 'react-bootstrap';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
-import BreedsChoice from './pages/BreedChoice/BreedsChoice';
+import BreedsChoice from './pages/BreedChoice/BreedsChoicePage';
 import BreedsPage from './pages/BreedsPage/BreedsPage';
 import HomePage from './pages/Homepage/HomePage';
 
