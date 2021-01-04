@@ -19,7 +19,7 @@ function App() {
           <Switch>
             <Route exact path= "/"><HomePage/></Route>
             <Route exact path= "/breeds"><BreedsPage/></Route>
-
+            
           </Switch>  
         </HashRouter> 
 
