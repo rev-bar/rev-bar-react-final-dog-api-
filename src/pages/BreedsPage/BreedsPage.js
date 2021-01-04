@@ -2,12 +2,11 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
 import DogCard from '../../components/DogCard/DogCard';
-import Nav from '../../components/NavBar/NavBar';
+
 import './BreedsPage.css';
 
 function BreedsPage() {
 
-  
     const [breeds,setBreeds] = useState([]);
 
         useEffect ( ()=> {
@@ -22,7 +21,7 @@ function BreedsPage() {
 
     return (
         <div p-breedsPage >
-            {/* <DogNavBa */}
+          
             <Row m={6} className="flex">
             {dogCards}
             </Row>
