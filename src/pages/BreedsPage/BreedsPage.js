@@ -4,22 +4,24 @@ import DogCard from '../../components/DogCard/DogCard';
 
 function BreedsPage() {
 
-    const [imageByBreed,setImageByBreed] = useState("");
-    
+  const breeds = ["affenpinscher","african"];
 
-    useEffect ( ()=> {
-        axios.get("https://dog.ceo/api/breed/hound/images/random").then( res=>{
-        console.log (res.data.message);
-        setImageByBreed(res.data.message)
-        console.log (imageByBreed);
-    })
-    },[])
+
+    
+    //prepering data for render:
+
+    const dogCards = breeds.map((breed,index) => <DogCard breed= {breed}
+                                                    key= {index}
+                                                    breed= {breed}  
+    
+                                                />  )
 
     return (
         <div>
-            <DogCard imageByBreed= {imageByBreed}/>
+            {dogCards}
         </div>
     );
 }
+
 
 export default BreedsPage;
