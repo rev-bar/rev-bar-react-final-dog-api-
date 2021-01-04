@@ -27,7 +27,7 @@ function DogCard(props) {
                 <Card m={4} spacing={3} className="c-dogCard">
                     <Card.Body className="c-dogCard-body" >
                         <p className="c-dogCard-text">{breed}</p>
-                        <a href="#/breeds/a">
+                        <a href="#/breeds/addd">
                             <Card.Img variant="top"  src={imageByBreed} className="c-dogCard-pic"></Card.Img>  
                         </a>
                     </Card.Body>
