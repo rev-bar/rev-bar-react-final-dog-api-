@@ -1,9 +1,23 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import DogCard from '../../components/DogCard/DogCard';
 
-function BreedsPage(props) {
+function BreedsPage() {
+
+    const [imageByBreed,setImageByBreed] = useState("");
+    
+
+    useEffect ( ()=> {
+        axios.get("https://dog.ceo/api/breed/hound/images/random").then( res=>{
+        console.log (res.data.message);
+        setImageByBreed(res.data.message)
+        console.log (imageByBreed);
+    })
+    },[])
+
     return (
         <div>
-            <p>Breeds</p>
+            <DogCard imageByBreed= {imageByBreed}/>
         </div>
     );
 }
