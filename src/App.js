@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, Row } from 'react-bootstrap';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
+import BreedsChoice from './pages/BreedChoice/BreedsChoice';
 import BreedsPage from './pages/BreedsPage/BreedsPage';
 import HomePage from './pages/Homepage/HomePage';
 
@@ -19,6 +20,7 @@ function App() {
           <Switch>
             <Route exact path= "/"><HomePage/></Route>
             <Route exact path= "/breeds"><BreedsPage/></Route>
+            <Route exact path= "/breeds/a"><BreedsChoice/></Route>
             
           </Switch>  
         </HashRouter> 
