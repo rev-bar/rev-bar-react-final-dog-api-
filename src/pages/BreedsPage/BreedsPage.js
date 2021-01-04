@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
 import DogCard from '../../components/DogCard/DogCard';
+import DogNavBar from '../../components/NavBar/NavBar';
 
 import './BreedsPage.css';
 
@@ -21,7 +22,7 @@ function BreedsPage() {
 
     return (
         <div p-breedsPage >
-          
+            <DogNavBar></DogNavBar>
             <Row m={6} className="flex">
             {dogCards}
             </Row>
