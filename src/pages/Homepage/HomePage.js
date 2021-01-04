@@ -9,8 +9,7 @@ function HomePage(props) {
             <p className= "p-home-head">DogBook</p>  
             <h1>Mens best friend</h1>
                 <div>
-                    <Link to= "/breeds"  className= "p-home-links">Breeds page</Link>  
-                
+                    <Link to= "/breeds"  className= "p-home-links">Woof!</Link>  
                 </div>
             
                  

@@ -1,0 +1,16 @@
+
+.c-navBar{
+    margin: 20px;
+}
+
+.c-navBar-logo{
+    width: 30px;
+    height:30px;
+    object-fit: cover;  
+}
+
+.c-navBar-links{
+    font-size: 20px;
+    color: wheat;
+ 
+}

@@ -1,0 +1,16 @@
+
+
+.flex {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.p-breedsPage{
+    width: 90%;
+    /* margin: 20px; */
+    padding: 20%;
+
+}
