@@ -16,12 +16,12 @@ import HomePage from './pages/Homepage/HomePage';
 
 
 function App() {
-  const [breeds,setBreeds] = useState ([]);
+  // const [breeds,setBreeds] = useState ([]);
 
-  useEffect ( ()=> {
-    axios.get("https://dog.ceo/api/breeds/list/all").then(res => 
-    setBreeds(Object.keys(res.data.message) ))
-},[])
+//   useEffect ( ()=> {
+//     axios.get("https://dog.ceo/api/breeds/list/all").then(res => 
+//     setBreeds(Object.keys(res.data.message) ))
+// },[])
 
 
 
@@ -31,7 +31,7 @@ function App() {
         <HashRouter>
           <Switch>
             <Route exact path= "/"><HomePage/></Route>
-            <Route exact path= "/breeds"><BreedsPage breeds={breeds}/></Route>
+            <Route exact path= "/breeds"><BreedsPage/></Route>
             <Route exact path= "/breeds/:index"><BreedsChoice/></Route>
           </Switch>  
         </HashRouter> 

@@ -6,17 +6,17 @@ import DogNavBar from '../../components/NavBar/NavBar';
 
 import './BreedsPage.css';
 
-function BreedsPage(props) {
+function BreedsPage() {
 
-    const {breeds} =props;
-    // const [breeds,setBreeds] = useState([]);
+    // const {breeds} =props;
+    const [breeds,setBreeds] = useState([]);
     const [reRender,setReRender] = useState(5);
 
 
-    //     useEffect ( ()=> {
-    //         axios.get("https://dog.ceo/api/breeds/list/all").then(res => 
-    //         setBreeds(Object.keys(res.data.message) ))
-    //   },[])
+        useEffect ( ()=> {
+            axios.get("https://dog.ceo/api/breeds/list/all").then(res => 
+            setBreeds(Object.keys(res.data.message) ))
+      },[])
 
     function reRenderPics(){
         let newNum = reRender+2;
