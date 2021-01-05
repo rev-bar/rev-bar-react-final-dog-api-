@@ -7,7 +7,7 @@ import './DogCard.css';
 
 function DogCard(props) {
  
-    const {breed, reRender} = props;
+    const {breed, reRender,index} = props;
     const [imageByBreed,setImageByBreed] = useState("");
     
 
@@ -18,7 +18,7 @@ function DogCard(props) {
     },[reRender])
 
 
-    // let breedURL = "#/breeds/:"+key;
+    let breedURL = "#/breeds/"+breed;
     // console.log (breedURL); 
 
     return (
@@ -26,7 +26,7 @@ function DogCard(props) {
                 <Card m={4} spacing={3} className="c-dogCard">
                     <Card.Body className="c-dogCard-body" >
                         <p className="c-dogCard-text">{breed}</p>
-                        <a href="#/breeds/addd">
+                        <a href={breedURL}>
                             <Card.Img variant="top"  src={imageByBreed} className="c-dogCard-pic"></Card.Img>  
                         </a>
                     </Card.Body>

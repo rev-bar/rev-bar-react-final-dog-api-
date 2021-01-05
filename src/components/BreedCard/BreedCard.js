@@ -17,7 +17,7 @@ function BreedCard(props) {
                 <Card m={4} spacing={3} className="c-breedCard">
                     <Card.Body className="c-breedCard-body" >
                         <Card.Img variant="top"  src={imgURL} className="c-dogCard-pic"></Card.Img> 
-                    </Card.Body>
+                </Card.Body>
                 </Card>  
         
     

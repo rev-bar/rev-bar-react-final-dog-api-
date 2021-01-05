@@ -6,14 +6,15 @@ import BreedCard from '../../components/BreedCard/BreedCard';
 import DogNavBar from '../../components/NavBar/NavBar';
 import './BreedsChoicePage.css';
 
-function BreedsChoice() {
+function BreedsChoice(props) {
+
+    const {breeds}=props;
+    const {index} = useParams();
+
+   
 
     const [breedPics,setBreedPics] = useState([]);
 
-    const {index} = useParams();
-
- 
-   
     const breed ="hound";
 
         useEffect ( ()=> {

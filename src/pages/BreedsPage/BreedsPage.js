@@ -28,7 +28,7 @@ function BreedsPage(props) {
 
     //prepering data for render:
 
-    const dogCards = breeds.map((breed,index) => <DogCard breed= {breed} key= {index} reRender= {reRender} /> )
+    const dogCards = breeds.map((breed,index) => <DogCard breed= {breed} index= {index} key= {index} reRender= {reRender} /> )
 
     return (
         <div>
