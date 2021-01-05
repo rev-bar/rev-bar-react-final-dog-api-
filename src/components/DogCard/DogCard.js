@@ -23,13 +23,16 @@ function DogCard(props) {
 
     return (
 
-                <Card m={4} spacing={3} className="c-dogCard">
-                    <Card.Body className="c-dogCard-body" >
+                <Card md={6} spacing={3} className="c-dogCard">
+                    <Card.Body >
                         <p className="c-dogCard-text">{breed}</p>
-                        <a href={breedURL}>
-                            <Card.Img variant="top"  src={imageByBreed} className="c-dogCard-pic"></Card.Img>  
-                        </a>
-                    </Card.Body>
+                  
+                    </Card.Body  >
+                  
+                            <a href={breedURL}>
+                                <Card.Img variant="top"  src={imageByBreed} className="c-dogCard-pic"></Card.Img>  
+                            </a>
+                     
                 </Card>  
         
     

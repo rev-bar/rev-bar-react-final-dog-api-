@@ -36,14 +36,16 @@ function BreedsPage() {
     return (
         <>
             <DogNavBar></DogNavBar>
-            <Row m={6} className="flex">
+            <Row  className="p-breedsPage-filter flex">
                 <Form.Group> 
-                    <Form.Control  value = {breedFilter} onChange= {e=> setBreedFilter(e.target.value) } as="textarea" className= "p-actors-search" placeholder= "Search actor" />
+                
+                    <Form.Control  value = {breedFilter} onChange= {e=> setBreedFilter(e.target.value) } as="textarea" className= "p-actors-search" placeholder= "Breed filter" />
                 </Form.Group>
                 <Button onClick={reRenderPics} >Update</Button>
             </Row>
-            <Row m={6} className="flex">
+            <Row md={6} className="flex p-breedsPage-cards">
                 {dogCards}
+                {/* <DogCard breed= "hound"/> */}
             </Row>
             
         </>
