@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Button, Form, Row } from 'react-bootstrap';
 import DogCard from '../../components/DogCard/DogCard';
 import DogNavBar from '../../components/NavBar/NavBar';
-import SearchBox from '../../components/SearchBox/SearchBox';
+
 
 import './BreedsPage.css';
 
