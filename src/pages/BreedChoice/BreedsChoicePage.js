@@ -6,22 +6,22 @@ import BreedCard from '../../components/BreedCard/BreedCard';
 import DogNavBar from '../../components/NavBar/NavBar';
 import './BreedsChoicePage.css';
 
-function BreedsChoice(props) {
+function BreedsChoice() {
 
-    const {breeds}=props;
     const {index} = useParams();
-
-   
 
     const [breedPics,setBreedPics] = useState([]);
 
-    const breed ="hound";
+    const breed =index;
 
         useEffect ( ()=> {
-            axios.get("https://dog.ceo/api/breed/"+breed+"/images").then(res => 
-            setBreedPics(res.data.message) )
+            axios.get("https://dog.ceo/api/breed/"+breed+"/images").then(res => {
+              setBreedPics(res.data.message)  ;
+            }
+            
+             )
       },[])
-
+      
     
   //prepering data for render:
 
@@ -30,8 +30,6 @@ function BreedsChoice(props) {
     return (
         <div>
             <DogNavBar></DogNavBar>
-            <p>{index}</p>
-
             <p className="p-breedChoice-head">{breed}</p>
             <Row m={6} className="flex">
             {dogCards}

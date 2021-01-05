@@ -21,8 +21,7 @@ function BreedsPage(props) {
     function reRenderPics(){
         let newNum = reRender+2;
         setReRender(newNum);
-        // alert("renderr");
-        
+        // alert("renderr");  
     }
 
 
