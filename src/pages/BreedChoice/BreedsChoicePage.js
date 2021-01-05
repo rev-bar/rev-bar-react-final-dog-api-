@@ -31,7 +31,7 @@ function BreedsChoice() {
         <div>
             <DogNavBar></DogNavBar>
             <p className="p-breedChoice-head">{breed}</p>
-            <Row m={6} className="flex">
+            <Row md={6} className="flex p-breedChoice-cards ">
             {dogCards}
             </Row> 
             
